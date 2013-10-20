@@ -22,4 +22,9 @@ DIR_OBJ= ./obj/
 
 all: clean $(OBJ)
 	$(CLINKER) $(DIR_BIN)bprimo.exe $(OBJ) $(LIBS) $(CFLAGS)
+	
+	
+clean:
+	@rm -rfv *.o
+	
 
