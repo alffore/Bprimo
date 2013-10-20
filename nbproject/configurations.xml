@@ -33,6 +33,11 @@
           <buildCommand>${MAKE} -f Makefile</buildCommand>
           <cleanCommand>${MAKE} -f Makefile clean</cleanCommand>
           <executablePath></executablePath>
+          <cTool>
+            <incDir>
+              <pElem>.</pElem>
+            </incDir>
+          </cTool>
         </makeTool>
       </makefileType>
       <item path="src/main.c" ex="false" tool="0" flavor2="2">
