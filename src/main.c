@@ -11,8 +11,11 @@
 
 int esPrimo(long n);
 long buscaDP(long n);
-/*
+/**
  * 
+ * @param argc
+ * @param argv
+ * @return 
  */
 int main(int argc, char** argv) {
 
@@ -27,7 +30,11 @@ int main(int argc, char** argv) {
     
     return (EXIT_SUCCESS);
 }
-
+/**
+ * 
+ * @param n
+ * @return 
+ */
 int esPrimo(long n){
     
     
@@ -35,7 +42,7 @@ int esPrimo(long n){
     
     for(i=2;i<n;i++){
         
-       // printf("%ld %d %ld\n",n,i,n%i);
+  
         if(n%i==0)return 0;
         
     }
@@ -45,7 +52,11 @@ int esPrimo(long n){
     
 }
 
-
+/**
+ * 
+ * @param n
+ * @return 
+ */
 long buscaDP(long n){
     
     long i;
