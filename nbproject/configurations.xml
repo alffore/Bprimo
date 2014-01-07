@@ -37,6 +37,12 @@
             <incDir>
               <pElem>.</pElem>
             </incDir>
+            <preprocessorList>
+              <Elem>_OPTIMIZE__=1</Elem>
+            </preprocessorList>
+            <undefinedList>
+              <Elem>__NO_INLINE__</Elem>
+            </undefinedList>
           </cTool>
         </makeTool>
       </makefileType>

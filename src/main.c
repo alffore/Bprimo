@@ -31,7 +31,7 @@ int main(int argc, char** argv) {
 
     cuenta = buscaDP(n);
 
-    printf("# tantas parejas:%ld:%ld\n", n,cuenta);
+    printf("# tantas parejas:%ld:%ld\n", n, cuenta);
 
     return (EXIT_SUCCESS);
 }
@@ -71,17 +71,19 @@ long buscaDP(long n) {
 
     long cuenta = 0;
 
-    long t = 0;
+    long t = 0, p = 0;
 
     for (i = n - 1; i >= r; i--) {
 
         if (esPrimo(i) == 1 && esPrimo(n - i) == 1) {
             t = r * (r - 1)*(r - 1)+(r - n + i)*(r - n + i)*(3 * r - 2);
             t /= 2;
+            p = (r - n + i)*(1 + (r - n + i)*(r - n + i) - 4 * r + 3 * r * r);
+            p /= 2;
             if (timp > 0) {
-                printf("%ld = %ld + %ld  :: r=%ld, a=%ld, t=%ld \n", n, i, n - i, r, r - n + i, t);
+                printf("%ld = %ld + %ld  :: r=%ld, a=%ld, t=%ld ,p=%ld\n", n, i, n - i, r, r - n + i, t, p);
             } else {
-                printf("%ld %ld %ld %ld %ld %ld\n", n, i, n - i, r, r - n + i, t);
+                printf("%ld %ld %ld %ld %ld %ld %ld\n", n, i, n - i, r, r - n + i, t, p);
             }
             cuenta++;
         }
