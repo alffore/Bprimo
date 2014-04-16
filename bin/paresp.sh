@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for ((i=0; i<=500; i+=2))
+for ((i=0; i<=1000; i+=2))
 do
 
 ./bprimo.exe $i 0

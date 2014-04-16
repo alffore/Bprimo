@@ -1,8 +1,8 @@
 /* 
  * File:   main.c
- * Author: alfonso
+ * Author: AAFR <alffore@gmail.com>
  *
- * Created on 4 de julio de 2013, 01:19 PM
+ * Created on 4 de Julio de 2013, 01:19 PM
  */
 
 #include <stdio.h>
